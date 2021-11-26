@@ -1,8 +1,8 @@
 <template>
   <div id="contenitorecard">
     <div class="centratura">
-      <Cards :v-for="canzoni,i in listacanzoni"
-      :kei="i"
+      <Cards v-for="canzoni,i in listacanzoni"
+      :key="i"
       :details="canzoni"/>
       
     </div>
@@ -33,7 +33,7 @@ export default {
       axios
       .get(this.apiUrl)
       .then((result) => {
-        this.listacanzoni = result.data
+        this.listacanzoni = result.data.response
         //console.log(result.data);
       });
     },
@@ -45,13 +45,13 @@ export default {
 <style scoped lang="scss">
 #contenitorecard {
   background-color: rgb(30, 45, 59);
-  height: 600px;
+  height: auto;
 }
 .centratura {
   width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
 </style>
