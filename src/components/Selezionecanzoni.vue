@@ -19,6 +19,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
  select{
-     margin: 0 auto;
+     width: 30%;
+     margin-left: 220px;
+     background-color: #2e3a46;
+     color:#1ed760
  }
 </style>

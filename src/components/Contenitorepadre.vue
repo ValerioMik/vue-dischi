@@ -44,7 +44,6 @@ export default {
     },
    selectOption(event){
     this.opzioneScelta = event.target.value
-   
   }, 
   },
   computed:{
