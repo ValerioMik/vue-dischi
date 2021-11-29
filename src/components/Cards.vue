@@ -20,10 +20,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #cards{
-    margin: 40px 10px 40px;
+    margin: 20px 10px 20px;
     background-color: rgb(46, 58, 70);
     height: auto;
-    width: 12%;
+    width: 14%;
     text-align: center;
     padding: 17px;
     
@@ -38,3 +38,9 @@ p{
 color: white; 
 }
 </style>
+
+
+
+
+
+
