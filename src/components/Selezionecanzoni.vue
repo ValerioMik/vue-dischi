@@ -20,8 +20,9 @@ export default {
 <style scoped lang="scss">
  select{
      width: 30%;
-     margin-left: 220px;
+     margin-left: 970px;
      background-color: #2e3a46;
-     color:#1ed760
+     color:#1ed760;
+    
  }
 </style>

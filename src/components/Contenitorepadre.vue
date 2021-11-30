@@ -1,6 +1,6 @@
 <template>
   <div id="contenitorecard">
-    <Generimusic @search="selectOption"/>
+    <!-- <Generimusic @search="selectOption"/> -->
     <div class="centratura">
       <Cards
         v-for="(canzoni, i) in filtraDischi"
@@ -14,13 +14,13 @@
 <script>
 import axios from "axios";
 import Cards from "@/components/Cards.vue"
-import Generimusic from "@/components/Selezionecanzoni.vue"
+//import Generimusic from "@/components/Selezionecanzoni.vue"
 
 export default {
   name: "Contenitorepadre",
   components: {
     Cards,
-    Generimusic
+    
     
   },
   data() {
@@ -44,6 +44,7 @@ export default {
     },
    selectOption(event){
     this.opzioneScelta = event.target.value
+
   }, 
   },
   computed:{
